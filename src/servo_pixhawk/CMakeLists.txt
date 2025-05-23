@@ -31,7 +31,7 @@ include_directories(
 )
 
 add_executable(${PROJECT_NAME}_node 
-  src/servoPixhawkNode.cpp # 或选择 src/servoPixhawk.cpp
+  src/servoPixhawkNode.cpp # 或选择 src/servoPixhawkDroneIBVS_sim.cpp
   src/servoPixhawk.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node
