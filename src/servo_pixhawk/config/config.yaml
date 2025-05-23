@@ -1,0 +1,39 @@
+# 启用前先确保已经起飞处于OFFBORAD模式,视野看得到目标
+tag_size_x: 0.3
+tag_size_y: 0.08
+distance_to_tag: 0.5
+has_distance_to_tag: true
+display_fps: 10
+verbose: true 
+debug: true
+acquisition_fps: 40
+enable_velocity_control: true
+enable_visual: false
+camera_params:
+  px: 554.254691191187
+  py: 554.254691191187
+  u0: 320.5
+  v0: 240.5
+ibvs_task_param:
+  adaptive_gain: # gain_at_zero, gain_at_infinity, slope_at_zero
+    initial: 2.0
+    min: 1.5
+    max: 20.0
+  rotation_rxyz:
+    x: -15.0  # 绕 X 轴旋转角度（单位：度）
+    y: 0.0    # 绕 Y 轴旋转角度（单位：度）
+    z: 0.0    # 绕 Z 轴旋转角度（单位：度）
+  rotation_matrix: # Rotation between (c1) and (e)
+    r11: 0
+    r12: -1
+    r13: 0
+    r21: 0
+    r22: 0
+    r23: -1
+    r31: 1
+    r32: 0
+    r33: 0
+  translation_vector: # Translation between (c1) and (e)
+    x: 0.0 
+    y: 0.0
+    z: -0.10

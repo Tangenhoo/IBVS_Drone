@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="servo_pixhawk" type="servo_pixhawk_node" name="servo_pixhawk_node" output="screen">
+        <rosparam command="load" file="$(find servo_pixhawk)/config/config.yaml" />
+        <param name="image_topic" value="/camera/color/image_raw" />
+        <param name="state_topic" value="/mavros/state" />
+        <param name="yolo_topic" value="/object_detection/yolo" />
+        <param name="velocity_topic" value="/mavros/setpoint_velocity/cmd_vel" />
+
+    </node>
+</launch>
